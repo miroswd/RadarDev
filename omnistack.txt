@@ -1,0 +1,27 @@
+//// Backend ////
+
+// Express -> microframework(muito leve) para auxiliar na criação de rotas
+Rota -> endereço adicional
+
+
+>>> yarn add express 
+>>> yarn add nodemon -D # Atualiza automaticamente
+
+
+Mongo DB        -> Banco não relacional
+Mongo Atlas     -> Hospedado na nuvem
+MongoDb Compass -> Db Visual
+Connect         -> "mongodb+srv://miroswd:<password>@cluster0-jnl6u.mongodb.net/test?retryWrites=true&w=majority"
+
+>>> yarn add mongoose
+
+//Models -> Entidades(Informações que queremos armazenar no banco de dados)
+
+>>> yarn add axios # Chamada para outras api's
+
+# pegando a latitude e longitude 
+https://www.google.com/maps/place/TV+GLOBO+-+S%C3%A3o+Paulo/@""""""-23.6151362"""""",""""""-46.6998517""""",17z/data=!3m1!4b1!4m5!3m4!1s0x94ce50ce5a5df547:0x333962e9faf53ac9!8m2!3d-23.6151411!4d-46.697663
+
+
+The DRY Principle: Don't Repeat Yourself
+Não repita uma lógica, crie um arquivo isolado
