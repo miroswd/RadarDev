@@ -25,3 +25,5 @@ https://www.google.com/maps/place/TV+GLOBO+-+S%C3%A3o+Paulo/@""""""-23.6151362""
 
 The DRY Principle: Don't Repeat Yourself
 Não repita uma lógica, crie um arquivo isolado
+
+>>> yarn add cors # remove o bloqueio de portas diferentes

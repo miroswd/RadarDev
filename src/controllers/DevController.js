@@ -51,5 +51,6 @@ module.exports = {
   
   }
   return res.json({dev})
-  }
+  },
+
 };

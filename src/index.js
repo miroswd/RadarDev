@@ -1,6 +1,6 @@
 const express = require('express');
-const mongoose = require('mongoose')
-
+const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require('./routes');
 
 
@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://miroswd:omnistack@cluster0-jnl6u.mongodb.net/tes
   useUnifiedTopology: true,
 })
 
-
+app.use(cors()) // Liberando acesso externo
 app.use(express.json()) // Válido para todas as rotas da aplicação
 app.use(routes);
 
