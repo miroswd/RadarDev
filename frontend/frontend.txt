@@ -1,0 +1,49 @@
+>>> yarn create react-app "Nome da Pasta, no caso web"
+
+# Tudo do react é baseado nesses conceitos
+
+// Componente -> Bloco isolado de HTML/CSS/JS - que não interfere na aplicação
+  -> Função que retorna algum conteúdo html/css/js
+  >  Criar um novo componente:
+    -> Quando é possível isolar um trecho da aplicação
+    -> Quando o componente é repetitivo
+    -> A primeira letra do Componente deve ser em caixa alta
+    -> Um componente por arquivo
+
+    // Componente pai renderiza os componentes filho dentro do componente pai
+
+// Propriedade - Informações que um componente PAI passa para o componente FILHO 
+  -> Atributos <Header title="Dashboard">
+  -> No componente Header será passado um parâmetro com as propriedades
+  Header(props) 
+    {props.title}
+
+
+// Estado - Informações mantidas pelo componente (lembrar> Imutabilidade)
+  -> Informação que o componente irá manipular
+  -> Funções que são próprias do componente, são criadas dentro do componente
+  -> O react não fica monitorando alterações em variáveis
+
+
+//// DevRadar 
+  - Crio primeiro a estrutura e estilização, depois a lógica
+
+
+// html
+  - aside -> Side bar
+  - main  -> conteúdo principal
+
+// css
+  global -> aplica em todo o projeto
+  
+  // Responsividade
+  -> abrir o inspect console, lá em cima vai mostrar as dimensões
+  -> ir diminuindo até o limite visual
+
+
+// Acessando a api
+  abro o backend em outro vscode
+  abre o index, para remover o bloqueio padrão de outras portas
+  >>> yarn dev
+
+>>> yarn add axios
