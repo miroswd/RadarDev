@@ -1,0 +1,20 @@
+React Native ussando expo
+Instalado o expo no celular
+
+>>> yarn global add expo-cli
+
+Acessar:https://yarnpkg.com/lang/en/docs/cli/global/
+adicionar ao bashprofile ou rodar no terminal: export PATH="$(yarn global bin):$PATH"
+
+>>> expo init mobile
+
+# Cada elemento deve ter sua própria estilização
+
+babel -> Converte para a versão correta do browser
+
+>>> yarn add react-navigation
+>>> expo install react-native-maps
+>>> expo install expo-location
+>>> expo install react-native-webview
+
+>>> yarn add axios
