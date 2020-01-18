@@ -9,5 +9,6 @@ yarn dev # Inicializa o servidor
 <ul>
   <li>Axios</li>
   <li>Cors</li>
+  <li>Express</li>
   <li>Node.js</li>
 </ul>
