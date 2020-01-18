@@ -18,3 +18,7 @@ babel -> Converte para a versão correta do browser
 >>> expo install react-native-webview
 
 >>> yarn add axios
+
+/// Funcionalidades avançadas
+
+>>> yarn add socket.io-client

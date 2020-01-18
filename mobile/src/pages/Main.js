@@ -1,6 +1,6 @@
 // Mapa
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, Image, View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, Image, View, Text, TextInput, TouchableOpacity, Keyboard } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 import MapView, {Marker, Callout} from 'react-native-maps';
 // Marker -> Marcação do Dev no mapa
@@ -8,6 +8,7 @@ import MapView, {Marker, Callout} from 'react-native-maps';
 import { requestPermissionsAsync, getCurrentPositionAsync } from 'expo-location'
 
 import api from '../services/api';
+import { connect, disconnect, subscribeToNewDevs   } from '../services/socket'
 
 function Main({ navigation }){
   const [devs, setDevs] = useState([]);
@@ -38,6 +39,22 @@ function Main({ navigation }){
     loadInitialPosition()
   }, []);
 
+  useEffect(() => {
+    subscribeToNewDevs(dev => setDevs([...devs, dev]))
+  },[devs])
+
+  function setupWebsocket(){
+    disconnect(); 
+    // Será executado assim que clicar no botão de busca, para capturar os novos devs cadastrados 
+    const  { latitude, longitude } = currentRegion;
+
+    connect(
+      latitude,
+      longitude,
+      techs
+    );
+  }
+
   async function loadDevs(){
     const { latitude, longitude } = currentRegion;
 
@@ -49,9 +66,10 @@ function Main({ navigation }){
       }
     });
 
-    console.log(response.data.devs)
+    Keyboard.dismiss()
 
     setDevs(response.data.devs)
+    setupWebsocket();
   }
 
   function handleRegionChanged(region) {

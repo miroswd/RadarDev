@@ -1,0 +1,7 @@
+Funcionalidades avançadas
+
+// Protocolo web socket
+  requisições http(GET,POST,PUT,DELETE)
+
+req front -> back -> res front 
+>>> yarn add socket.io
