@@ -28,9 +28,9 @@ yarn start # Inicializa o expo
 </br>
 
 <p aling="center">
-<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-map.png" width="300px"/>
-<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-perfil.png" width="300px"/>
-</br>
+<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-perfil.png"/>
+<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-map.png"/>
+
 </p>
 
 <h3>Ferramentas Utilizadas:</h3>
