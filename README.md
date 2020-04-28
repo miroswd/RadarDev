@@ -24,16 +24,14 @@ yarn # Instala as dependências
 yarn start # Inicializa o expo
 ```
 <h6>Main Frontend</h6>
-<img src="https://github.com/miroswd/RadarDev/blob/master/frontend/assets/front-main.png"/>
+<img src="https://github.com/miroswd/RadarDev/blob/master/frontend/assets/front-main.png" />
 </br>
 
-<h6>Main Mobile</h6>
-<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-map.png" />
+<p aling="center">
+<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-map.png" width="300px"/>
+<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-perfil.png" width="300px"/>
 </br>
-
-<h6>Profile Mobile</h6>
-<img src="https://github.com/miroswd/RadarDev/blob/master/mobile/assets/screenshots/mobile-perfil.png" />
-</br>
+</p>
 
 <h3>Ferramentas Utilizadas:</h3>
 <ul>
